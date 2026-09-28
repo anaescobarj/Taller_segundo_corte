@@ -1,6 +1,6 @@
 # Taller Segundo Corte — Real-to-Sim
 
-Taller de la asignatura de Mecatrónica (UMNG) que integra hardware real (ESP32) con simulación física (PyBullet), en tres partes independientes.
+Taller de la asignatura de micros y laboratorio, que integra hardware real (ESP32) con simulación física (PyBullet), en tres partes independientes.
 
 ## Arquitectura general
 
