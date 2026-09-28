@@ -61,7 +61,7 @@ cd gym-pybullet-drones
 python <script_dron>.py
 ```
 
-![Montaje físico de la consola ESP32 para el dron](images/montaje_dron.png)
+![Montaje físico de la consola ESP32 para el dron](montaje_dron.png)
 
 _(agregar aquí una captura de la simulación del dron: `![Dron en PyBullet](images/dron.png)`)_
 
