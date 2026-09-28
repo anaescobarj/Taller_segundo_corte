@@ -1,0 +1,4 @@
+﻿robots_env/
+drones_env/
+__pycache__/
+*.pyc
