@@ -79,7 +79,7 @@ Consola de mandos ESP32 (joystick analógico de dos ejes + potenciómetro + bot�
 
 **Protocolo serial (ESP32 → PC):** líneas de texto `x <valor>`, `y <valor>`, `z <valor>`, y `g` cuando se presiona el botón (alterna abrir/cerrar pinza).
 
-![Montaje físico de la consola ESP32 con joystick y potenciómetro para el Baxter](images/montaje_baxter.png)
+![Montaje físico de la consola ESP32 con joystick y potenciómetro para el Baxter](montaje_baxter.png)
 
 **Cómo correrlo:**
 
@@ -95,7 +95,7 @@ python esp32_baxter_ik.py
 
 **Problema conocido:** el potenciómetro usado para el eje Z puede requerir revisión de cableado (conexión floja del wiper al pin ADC) — verificar con un sketch de prueba (`analogRead` directo) si los valores no varían al girarlo.
 
-![Brazo Baxter posicionado junto al objeto a agarrar](images/baxter_agarre.png)
+![Brazo Baxter posicionado junto al objeto a agarrar](baxter_agarre.png)
 
 ---
 
@@ -114,7 +114,7 @@ Consola de mandos ESP32 (mismo joystick de la parte b) para desplazar la base de
 - Al iniciar, el script calibra automáticamente el "centro" del joystick (2 segundos sin tocarlo) para compensar el offset natural del potenciómetro en reposo, y aplica además una zona muerta (deadzone) para evitar drift.
 - Las tres cámaras sintéticas (RGB, profundidad, segmentación por color) están fijas, observando la escena mientras Atlas se mueve dentro del campo de visión.
 
-![Montaje físico de la consola ESP32 con joystick para Atlas](images/montaje_atlas.png)
+![Montaje físico de la consola ESP32 con joystick para Atlas](montaje_atlas.png)
 
 **Cómo correrlo:**
 
@@ -126,9 +126,9 @@ python atlas_esp32.py
 
 Al arrancar, no toques el joystick durante los 2 segundos de calibración inicial (mensaje en consola). Luego, muévelo para desplazar y girar a Atlas.
 
-![Atlas cargado en la simulación](images/atlas_cargado.png)
+![Atlas cargado en la simulación](atlas_cargado.png)
 
-![Cámaras sintéticas (RGB, profundidad, segmentación) observando a Atlas](images/atlas_camaras.png)
+![Cámaras sintéticas (RGB, profundidad, segmentación) observando a Atlas](atlas_camaras.png)
 
 ---
 
